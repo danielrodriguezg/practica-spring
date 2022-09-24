@@ -1,0 +1,11 @@
+# Ignora archivos del sistema Mac 
+.DS_store
+
+# Ignora todo los builds
+*/build/*
+
+# Ignora todo los .gradle
+*/.gradle/*
+
+# Excepto gitignore
+!.gitignore
