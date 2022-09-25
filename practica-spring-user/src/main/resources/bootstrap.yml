@@ -1,0 +1,13 @@
+spring:
+    application:
+        name: practica-spring-user
+    cloud:
+        config:
+            uri: http://localhost:8888
+    profiles:
+        active: develop
+management:
+    endpoints:
+        web:
+            exposure:
+                include: '*'

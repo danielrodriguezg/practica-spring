@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: practica-spring-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: file:///C:/Users/user/OneDrive/Documentos/proyectos/backend/spring/practica-microservicios-1/practica-spring-config-dir
+server:
+  port: 8888

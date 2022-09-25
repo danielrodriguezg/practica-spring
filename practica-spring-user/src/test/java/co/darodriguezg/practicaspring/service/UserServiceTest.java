@@ -1,7 +1,7 @@
 package co.darodriguezg.practicaspring.service;
 
 import co.darodriguezg.practicaspring.AppConfig;
-import co.darodriguezg.practicaspring.domain.User;
+import co.darodriguezg.practicaspring.domain.entity.User;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +22,7 @@ public class UserServiceTest {
     public void callAuthService(){
         String username = "daniel";
         String password = "123";
-        User user = userService.callAuthService(username, password);
+        User user = userService.getUser(username, password);
         assertEquals(user.getName(), "123");
     }
 }

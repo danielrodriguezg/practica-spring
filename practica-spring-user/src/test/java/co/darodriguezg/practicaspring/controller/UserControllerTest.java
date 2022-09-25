@@ -1,6 +1,6 @@
 package co.darodriguezg.practicaspring.controller;
 
-import co.darodriguezg.practicaspring.domain.User;
+import co.darodriguezg.practicaspring.domain.entity.User;
 import co.darodriguezg.practicaspring.service.UserService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -34,7 +34,7 @@ public class UserControllerTest {
         String password = "123";
         String uri = "/user";
 
-        Mockito.doReturn(new User()).when(userService).callAuthService(anyString(), anyString());
+        Mockito.doReturn(new User()).when(userService).getUser(anyString(), anyString());
 
         MockHttpServletRequestBuilder requestBuilder = MockMvcRequestBuilders.get(uri)
                 .param("username", username)
