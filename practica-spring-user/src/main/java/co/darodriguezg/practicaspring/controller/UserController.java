@@ -1,6 +1,6 @@
 package co.darodriguezg.practicaspring.controller;
 
-import co.darodriguezg.practicaspring.domain.entity.User;
+import co.darodriguezg.practicaspringcommons.domain.entity.User;
 import co.darodriguezg.practicaspring.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

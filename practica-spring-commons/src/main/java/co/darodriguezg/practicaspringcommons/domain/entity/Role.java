@@ -1,4 +1,4 @@
-package co.darodriguezg.practicaspring.domain.entity;
+package co.darodriguezg.practicaspringcommons.domain.entity;
 
 import lombok.*;
 
