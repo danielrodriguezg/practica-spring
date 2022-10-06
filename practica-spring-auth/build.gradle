@@ -18,9 +18,7 @@ ext {
 }
 
 dependencies {
-	implementation ('co.darodriguezg:practica-spring-commons:0.0.1-SNAPSHOT'){
-		exclude group: 'org.springframework.boot', module 'spring-boot-starter-data-jpa'
-	}
+	implementation 'co.darodriguezg:practica-spring-commons:0.0.1-SNAPSHOT'
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testCompileOnly 'org.projectlombok:lombok'
@@ -31,6 +29,7 @@ dependencies {
 	implementation 'org.springframework.security.oauth:spring-security-oauth2:2.3.8.RELEASE'
 	implementation 'org.springframework.security:spring-security-jwt:1.1.1.RELEASE'
 	implementation 'org.glassfish.jaxb:jaxb-runtime:2.3.6'
+	implementation 'org.springframework.cloud:spring-cloud-starter-config'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }

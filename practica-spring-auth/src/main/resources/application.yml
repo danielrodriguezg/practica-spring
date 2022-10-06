@@ -2,10 +2,10 @@ spring:
   application:
     name: practica-spring-auth
   config:
-    import: 'optional:configserver:'
+    import: "optional:configserver:"
 
 server:
-  port: 9100
+  port: 9200
 
 eureka:
   instance:

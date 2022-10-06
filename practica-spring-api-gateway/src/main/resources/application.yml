@@ -8,6 +8,10 @@ zuul:
     practica-spring-user:
       service-id: practica-spring-user
       path: /api/user/**
+    practica-spring-auth:
+      service-id: practica-spring-auth
+      path: /api/security/**
+      sensitive-headers: Cookie,Set-Cookie
 eureka:
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
